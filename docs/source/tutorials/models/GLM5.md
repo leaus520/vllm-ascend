@@ -167,6 +167,9 @@ If you want to deploy multi-node environment, you need to set up environment on 
     --quantization ascend \
     --enable-chunked-prefill \
     --enable-prefix-caching \
+    --tool-call-parser glm47 \
+    --reasoning-parser glm45 \
+    --enable-auto-tool-choice \
     --additional-config '{"multistream_overlap_shared_expert": true}' \
     --compilation-config '{"cudagraph_mode": "FULL_DECODE_ONLY"}' \
     --speculative-config '{"num_speculative_tokens": 3, "method": "deepseek_mtp", "enforce_eager": true}' 
